@@ -1,0 +1,286 @@
+body{
+	background: url("/imges/bk/bk.jfif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+
+.gdtt::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+audio{
+    z-index: 5;
+    position: absolute;
+    right: 0;
+    opacity: 0.1;
+    /*-webkit-transition: all 2s;*/
+}
+audio:hover{
+    opacity: 1;
+}
+.wall{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+div#midground{
+    background: url("/imges/bk/midground.png");
+    z-index: 1;
+    -webkit-animation: cc 100s linear infinite;
+}
+div#foreground{
+    background: url("/imges/bk/foreground.png");
+    z-index: 2;
+    -webkit-animation: cc 153s linear infinite;
+}
+div#top{
+    background: url("/imges/bk/midground.png");
+    z-index: 4;
+    -webkit-animation: dd 100s linear infinite;
+    animation: dd 100s linear infinite;
+}
+
+
+@-webkit-keyframes cc {
+    from{
+        background-position: 0 0;
+        transform: translateY(10px);
+    }
+    to{
+        background-position: 600% 0;
+    }
+}
+@-webkit-keyframes dd {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 600%;
+    }
+    }
+
+    @keyframes dd {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 600%;
+    }
+    }
+    .guding{
+        /*z-index: 6;*/
+        height: 100%;
+        width: 100%;
+        min-width: 1300px;
+        background:rgba(0,0,0,.5);
+        position: fixed;
+    }
+.Profile{
+        overflow: hidden;
+        margin-top: 60px;
+        margin-left: 20px;
+        width: 400px;
+        height: 84%;
+        border-radius: 20px;
+        background: rgba(255,255,255,.8);
+    }
+.footer-i{
+    margin:10px 20px;
+    height: 40px;
+    background:rgba(39,40,34,.8);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    color: #737373;
+    font-size: 12px;
+}
+.you{
+    overflow: auto;
+    height: 84%;
+    width: calc(100% - 460px);
+    background:rgba(73,110,147,0.5);
+    float: right;
+    margin-top: 60px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+/*去除滚动条*/
+.you::-webkit-scrollbar {
+    width: 0px;
+}
+
+.you .zuoa{
+    margin-right: 10px;
+    float: right;
+    width: 400px;
+    height: 100%;
+    /*border: 1px solid #fff;*/
+}
+.you .zuob{
+    margin-right: 30px;
+    float: right;
+    width: 400px;
+    height: 100%;
+    /*border: 1px solid red;*/
+}
+.you .zuob .a,.b1{
+    overflow: hidden;
+    margin-top: 10px;
+    width: 100%;
+    /*border: 1px solid #00eaff;*/
+    border-radius: 14px;
+    height: 220px;background: #00eaff;
+    box-shadow: 0px 8px 16px 0px rgba(0,234,255,.3);
+}
+.you .zuob .a h2{
+    margin: 30px;
+    margin-bottom: 10px;
+}
+.you .zuob .a p{
+    margin-left: 30px;
+}
+.you .zuob .a button{
+    height: 40px;
+    width: 80px;
+    margin-top:50px;
+    margin-left: 270px;
+    background: #fff;
+    border-radius: 10px;
+}
+.you .zuob .b1{
+    position: relative;
+    margin-top: 30px;
+background: #9C27B0;
+}
+.you .zuoa div{box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);}
+.you .zuoa .a,.b,.c,.d{
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 14px;
+    height: 95px;
+    background: #fff;
+}
+.you .zuoa .a{
+    background: #0275d2;
+    margin-top: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(2,117,210,.3);
+}
+.you .zuoa .b{
+    background: #181717;
+    box-shadow: 0px 8px 16px 0px rgba(24,23,23,.4);
+
+}
+.you .zuoa .c{
+    background: #fb7299;
+    box-shadow: 0px 8px 16px 0px rgba(255,145,176,.5);
+}
+.you .zuoa .d{
+    z-index: 7;
+    background: #c20b0d;
+    box-shadow: 0px 8px 16px 0px rgba(228,13,16,.5);
+    /*border: 1px solid #fff;*/
+}
+.you .zuoa .d:hover{
+    /*animation:1s linear infinite;*/
+    transition: 1s;
+    transform: scale(1.05);
+    cursor: auto;
+   box-shadow: 0px 8px 16px 0px rgba(228,13,16,.8);
+}
+.you .zuoa .c:hover{
+    /*animation:1s linear infinite;*/
+    transition: 1s;
+    transform: scale(1.05);
+    cursor: auto;
+   box-shadow: 0px 8px 16px 0px rgba(255,145,176,.8);
+}
+.you .zuoa .b:hover{
+    /*animation:1s linear infinite;*/
+    transition: 1s;
+    transform: scale(1.05);
+    cursor: auto;
+   box-shadow: 0px 8px 16px 0px rgba(255,255,255,.8);
+}
+.you .zuoa .a:hover{
+    /*animation:1s linear infinite;*/
+    transition: 1s;
+    transform: scale(1.05);
+    cursor: auto;
+   box-shadow: 0px 8px 16px 0px rgba(2,117,210,.8);
+}
+.you .zuob .a:hover{
+    /*animation:1s linear infinite;*/
+    transition: all 0.5s;
+    transform: scale(1.05);
+    cursor: auto;
+   box-shadow: 0px 8px 16px 0px rgba(0,234,255,.8);
+}
+.you .zuob .b1:hover{
+    /*animation:1s linear infinite;*/
+    transition: all 0.5s;
+    transform: scale(1.05);
+    cursor: auto;
+   box-shadow: 0px 8px 16px 0px rgba(222,63,249,.8);
+}
+.Profile .touxiang{
+    width: 200px;
+    height: 200px;
+    background: url("/imges/tx.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+.Profile .name{
+    text-align: center;
+    /*background: #fff;*/
+}
+.Profile .name p{
+    margin-top: 10px;
+}
+.Profile .tb .iconfont{
+    font-size: 36px;
+    text-align: center;
+    margin-right: 16px;
+}
+.Profile .tb{
+    margin-top: 20px;
+    text-align: center;
+}
+.Profile .tb .icon-weixin{
+    color: green;
+}
+.Profile .tb .icon-QQ{
+    color: red;00a9fa
+}
+.Profile .tb .icon-youxiang{
+    color: #00a9fa;}
+    /*博客按钮*/
+.you .zuob .b1 button{
+    height: 40px;
+    width: 80px;
+    margin-top:80px;
+    margin-left: 270px;
+    background: #fff;
+    border-radius: 10px;
+}
+/*qq*/
+.you .zuoa svg{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 50%;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.you .zuoa span{
+    padding: 20px;
+    color: #fff;
+    font-size: 14px;
+    vertical-align: 4px;
+}
